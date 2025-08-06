@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/icons8-flower-48.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Flower</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/icons8-flower-48.png"
+            type="image/x-icon">
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <title>Flower</title>
+    </head>
+    <body>
+        <header>
+            <!-- banner container -->
+            <section class>
+                <!-- navigation bar -->
+                <nav
+                    class="flex justify-between items-center py-[18px] gap-[48px] my-[30px]">
+                    <img src="assets/logo.png" alt="Logo"
+                        class="h-auto w-[135px]">
+                    <ul
+                        class="md:flex gap-6">
+                        <li class="hidden md:flex font-bold"><a href="#"
+                                class="hover:text-orange-600 ">Home</a></li>
+                        <li class="hidden md:flex nav-color"><a href="#"
+                                class="hover:text-orange-600">Shop</a></li>
+                        <li class="hidden md:flex nav-color"><a href="#"
+                                class="hover:text-orange-500">About
+                                Us</a></li>
+                        <li class="font-medium"><a href="#"
+                                class="flex items-center gap-2 hover:text-orange-600">
+                                <!-- <img class="w-fit" src="assets/icons8-cart-48.png" alt="">Cart ($585) -->
+                                🛒 Cart ($585)
+                            </a></li>
+                    </ul>
+                </nav>
+
+                <!-- banner section -->
+                <section
+                    class="flex flex-col md:flex-row mt-[120px] banner items-center">
+
+                    <div class="w-full md:w-1/2 md:order-last">
+                        <img src="assets/hero-flower.png" alt="Flowers"
+                            class="object-cover w-full">
+                    </div>
+
+                    <div class="w-full md:w-1/2 mt-8 md:mt-0">
+                        <h1
+                            class="text-[1.5rem] md:text-[4.0625rem] noto-serif-font">
+                            ALWAYS <span class="second-color">FRESH
+                                FLOWERS</span>
+                        </h1>
+                        <div>
+                            <p
+                                class="text-[0.875rem] md:text-[1.375rem] para-color inter-text">
+                                Indulge your senses with the beauty and
+                                fragrance of
+                                our fresh flower shop.
+                                From classic roses to exotic blooms, we offer a
+                                wide
+                                variety of fresh flowers
+                                that are perfect for any occasion.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </header>
+
+        <main>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
 </html>
