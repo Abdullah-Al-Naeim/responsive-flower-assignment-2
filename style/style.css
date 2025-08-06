@@ -4,7 +4,7 @@
 .noto-serif-font {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
@@ -19,8 +19,10 @@
 
 * {
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 body {
     max-width: 1140px;
     margin: 0 auto;
@@ -88,14 +90,106 @@ nav ul .nav-link {
     margin-bottom: 20px;
 }
 
+/* plant card section */
+.our-plants {
+    margin-top: 120px;
+}
+
+.plants-detail {
+    text-align: center;
+    margin-bottom: 50px;
+
+
+}
+
+.plants-title {
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+
+}
+
+.plants-details {
+    color: #00000050;
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.card-img {
+    margin-bottom: 20px;
+}
+
+.card-name {
+    font-size: 1.375rem;
+    color: #111111;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.price {
+    font-size: 1.375rem;
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    width: 100%;
+    padding: 20px 50px;
+    height: auto;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* store details */
+
+.plant-lover-card{
+    display: flex;
+    margin-top: 210px;
+    gap: 50px;
+}
+.flower-store{
+    height: 100%;
+}
+.store-details{
+    margin: auto 0;
+}
+.store-title{
+    font-size: 3.125rem;
+}
+.points{
+    margin-top: 30px;
+}
+.points li{
+    color: #00000050;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.join{
+    width:100vw;
+    background-image: url(".a");
+}
+
 
 
 
 
 @media screen and (max-width:576px) {
     body {
-    margin: 20px;
-}
+        margin: 20px;
+    }
+
     .nav-links {
         display: none;
     }
@@ -118,6 +212,26 @@ nav ul .nav-link {
         width: 100%;
     }
 
+    .our-plants {
+        max-width: 100%;
+    }
+
+    .plant-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .card-button {
+        padding: 12px;
+        font-size: 0.875rem;
+    }
+    .plant-lover-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+}
+    
+
 
 
 }
@@ -139,6 +253,9 @@ nav ul .nav-link {
 
 
 
-@media screen and (min-width:577px) and (max-width:992px) {
-    
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    /* Styles for tablets and other medium-sized devices */
+    .plant-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
